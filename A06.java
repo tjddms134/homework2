@@ -1,55 +1,55 @@
-
-
-
-
 import java.util.*;
+  import java.io.*;
+   class B06{
+            public void input(){
+	                     Scanner s = new Scanner(System.in);
+			                      System.out.print("NAME:"); 
+					                       int name = s.nextInt();      
+							                        System.out.print("Kor Grade:"); 
+										                 int kor = s.nextInt();
+												                  System.out.print("Eng Grade:");
+														                   int eng = s.nextInt();
+																                    System.out.print("Math Grade:");
+																		                     int math = s.nextInt();
+																				                     int total = kor+eng+math;
+																						                      double avg = (double)total/3;
+																								                    
+																										                     System.out.println("Avg is "+avg );         
+																												              
+																													            if (avg >=95  ) {
+																														             System.out.print("A+");
+																															                 }
+																																	       if (avg >= 90 && avg <= 94) {
+																																	                System.out.print("A");
+																																			            }
+																																				          if (avg >= 85 && avg <= 89) {
+																																					           System.out.print("B+");
+																																						               }
+																																							             if (avg > 80 && avg <= 84 ) {
+																																								              System.out.print("B");
+																																									                  }
+																																											        if (avg > 75 && avg <= 79 ) {
+																																												         System.out.print("C+");
+																																													             }
+																																														           if (avg > 70 && avg <= 74 ) {
+																																															            System.out.print("C");
+																																																                }
+																																																		      if (avg > 65 && avg <= 69 ) {
+																																																		               System.out.print("D+");
+																																																			                   }
+																																																					         if (avg > 60 && avg <= 64 ) {
+																																																						          System.out.print("D");
+																																																							              }
+																																																								            if (avg > 0 && avg <= 59 ) {
+																																																									             System.out.print("F");
+																																																										                 }
 
-class A06{
-          int korscore;
-	            int engscore;
-		              int mathscore;
-			                int name;
-					public void init(){
-					input();
-					print();
-					}
-					public void input(){
-					Scanner s=new Scanner(System.in);
+																																																												            
+																																																													             }
+																																																														              public static void main(String [] args) throws IOException{
 
-					System.out.println("input name");
-					this.name=s.nextInt();
-					System.out.println("input korscore");
-					this.korscore=s.nextInt()
+																																																															              
+																																																																                       new A06().input();
+																																																																		              
+																																																																			               }
 
-					System.out.println("input mathscore");
-					this.mathscore=s.nextInt();
-					System.out.println("input engscore");
-					this.engscore=s.nextInt();
-					}
-
-					public void print(){
-					int sum=this.korscore+this.engscore+this.mathscore;
-					double avg=sum/3.0;
-
-					System.out.println("avg is"+avg);
-
-					if(this.avg<100&&this.avg>95)
-					System.out.println("score:"+"A+");
-					else if(this.avg<94&&this.avg>90)
-					System.out.println("score:"+"A");
-					else if(this.avg<89&&this.avg>85)
-					System.out.println("score:"+"B+");
-					else if(this.avg<84&&this.avg>80)
-					System.out.println("score:"+"B");
-					else if(this.avg<79&&this.avg>75)
-					System.out.println("score:"+"C+");
-					else if(this.avg<74&&this.avg>70)
-					System.out.println("score:"+"C");
-					else if(this.avg<69&&this.avg>65)
-					System.out.println("score:"+"D+");
-					else if(this.avg<64&&this.avg>60)
-					System.out.println("score:"+"D");
-					else
-					System.out.println("score:"+"F");
-					}
-					}
