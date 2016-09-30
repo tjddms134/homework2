@@ -1,10 +1,10 @@
 import java.util.*;
   import java.io.*;
-   class B06{
+   class A06{
             public void input(){
 	                     Scanner s = new Scanner(System.in);
 			                      System.out.print("NAME:"); 
-					                       int name = s.nextInt();      
+					                       int name = s.nextChar();      
 							                        System.out.print("Kor Grade:"); 
 										                 int kor = s.nextInt();
 												                  System.out.print("Eng Grade:");
