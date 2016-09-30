@@ -4,7 +4,7 @@ import java.util.*;
             public void input(){
 	                     Scanner s = new Scanner(System.in);
 			                      System.out.print("NAME:"); 
-					                       int name = s.nextChar();      
+					                       int name = s.nextInt();      
 							                        System.out.print("Kor Grade:"); 
 										                 int kor = s.nextInt();
 												                  System.out.print("Eng Grade:");
@@ -52,4 +52,4 @@ import java.util.*;
 																																																																                       new A06().input();
 																																																																		              
 																																																																			               }
-
+}
