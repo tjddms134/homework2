@@ -16,6 +16,6 @@ class A03{
 			       }
  
        public static void main(String [] args) throws IOException{
-       new A03().input;
+       new A03().input();
        }
        }
